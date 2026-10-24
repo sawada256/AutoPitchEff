@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "mac-universal",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-universal",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_OSX_ARCHITECTURES": "arm64;x86_64",
+        "CMAKE_OSX_DEPLOYMENT_TARGET": "11.0"
+      }
+    },
+    {
+      "name": "dsp-debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-dsp-debug",
+      "cacheVariables": {"CMAKE_BUILD_TYPE": "Debug", "APE_BUILD_PLUGIN": "OFF", "APE_SANITIZE": "ON"}
+    }
+  ],
+  "buildPresets": [
+    {"name": "mac-universal", "configurePreset": "mac-universal", "jobs": 4},
+    {"name": "dsp-debug", "configurePreset": "dsp-debug", "jobs": 4}
+  ],
+  "testPresets": [
+    {"name": "mac-universal", "configurePreset": "mac-universal", "output": {"outputOnFailure": true}},
+    {"name": "dsp-debug", "configurePreset": "dsp-debug", "output": {"outputOnFailure": true}}
+  ]
+}

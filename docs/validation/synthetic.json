@@ -1,0 +1,54 @@
+{
+  "clean": {
+    "voiced_coverage": 0.998840579710145,
+    "rpa50_unshifted": 0.9945893719806763,
+    "rpa25_unshifted": 0.9943961352657005,
+    "false_voiced_silence": 0.03636363636363636,
+    "voiced_abs_cents_median": 3.4099602992567317,
+    "voiced_abs_cents_p95": 5.274233255368757,
+    "read_delay_ms_p50": 1.1613,
+    "read_delay_ms_p99": 3.1796650000000013,
+    "output_abs_cents_median": 2.7459320774121663,
+    "output_abs_cents_p95": 4.129715621730743,
+    "renderer_timing": "DSP RTF=0.0664604 mean block ms=0.0886139 max block ms=16.0622"
+  },
+  "bleed_10dB": {
+    "voiced_coverage": 0.9978743961352657,
+    "rpa50_unshifted": 0.993816425120773,
+    "rpa25_unshifted": 0.993816425120773,
+    "false_voiced_silence": 0.07515151515151515,
+    "voiced_abs_cents_median": 3.27609133614421,
+    "voiced_abs_cents_p95": 6.8403324524124,
+    "read_delay_ms_p50": 1.13561,
+    "read_delay_ms_p99": 3.0073184000000026,
+    "output_abs_cents_median": 2.571859591446611,
+    "output_abs_cents_p95": 4.769968147974306,
+    "renderer_timing": "DSP RTF=0.142988 mean block ms=0.190651 max block ms=172.219"
+  },
+  "bleed_5dB": {
+    "voiced_coverage": 0.9972946859903382,
+    "rpa50_unshifted": 0.9889855072463768,
+    "rpa25_unshifted": 0.9889855072463768,
+    "false_voiced_silence": 0.07272727272727272,
+    "voiced_abs_cents_median": 3.4429806168823682,
+    "voiced_abs_cents_p95": 9.190289088818947,
+    "read_delay_ms_p50": 1.07179,
+    "read_delay_ms_p99": 2.9937136,
+    "output_abs_cents_median": 2.6177474870576454,
+    "output_abs_cents_p95": 6.620567981506455,
+    "renderer_timing": "DSP RTF=0.112126 mean block ms=0.149501 max block ms=32.0926"
+  },
+  "bleed_0dB": {
+    "voiced_coverage": 0.996135265700483,
+    "rpa50_unshifted": 0.9006763285024154,
+    "rpa25_unshifted": 0.9002898550724637,
+    "false_voiced_silence": 0.055757575757575756,
+    "voiced_abs_cents_median": 5.01332064188172,
+    "voiced_abs_cents_p95": 1202.9781203457965,
+    "read_delay_ms_p50": 1.10868,
+    "read_delay_ms_p99": 3.010763000000001,
+    "output_abs_cents_median": 6.479915782186271,
+    "output_abs_cents_p95": 14.506689558058085,
+    "renderer_timing": "DSP RTF=0.0894093 mean block ms=0.119212 max block ms=12.3027"
+  }
+}

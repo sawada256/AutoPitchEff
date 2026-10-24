@@ -1,0 +1,216 @@
+{
+  "selection": "Published average MIDI pitch >= 60, 11 recordings; not a gender annotation.",
+  "scoring": "All annotated voiced frames inside 180..1200 Hz, no delay compensation. Bleed is synthetic.",
+  "aggregate": {
+    "clean": {
+      "rpa50_in_range_unshifted": 0.9349129227662797,
+      "rpa25_in_range_unshifted": 0.8612443210499747,
+      "coverage_in_range": 0.9846037354871278
+    },
+    "bleed_10dB": {
+      "rpa50_in_range_unshifted": 0.8677435638566381,
+      "rpa25_in_range_unshifted": 0.7923397274103988,
+      "coverage_in_range": 0.9287291771832408
+    }
+  },
+  "tracks": {
+    "vocadito_2_clean": {
+      "reference_frames_in_range": 4570,
+      "voiced_frames_total": 4570,
+      "rpa50_in_range_unshifted": 0.9155361050328228,
+      "rpa25_in_range_unshifted": 0.8614879649890591,
+      "coverage_in_range": 0.9969365426695842,
+      "false_voiced_unvoiced": 0.2540106951871658,
+      "median_abs_cents_when_tracking_in_range": 4.179555020740285
+    },
+    "vocadito_2_bleed_10dB": {
+      "reference_frames_in_range": 4570,
+      "voiced_frames_total": 4570,
+      "rpa50_in_range_unshifted": 0.8091903719912472,
+      "rpa25_in_range_unshifted": 0.761706783369803,
+      "coverage_in_range": 0.9358862144420131,
+      "false_voiced_unvoiced": 0.010026737967914439,
+      "median_abs_cents_when_tracking_in_range": 5.31107303713651
+    },
+    "vocadito_6_clean": {
+      "reference_frames_in_range": 2813,
+      "voiced_frames_total": 2813,
+      "rpa50_in_range_unshifted": 0.9089939566299324,
+      "rpa25_in_range_unshifted": 0.7739068610024884,
+      "coverage_in_range": 0.984713828652684,
+      "false_voiced_unvoiced": 0.18870843000773396,
+      "median_abs_cents_when_tracking_in_range": 8.965415049832323
+    },
+    "vocadito_6_bleed_10dB": {
+      "reference_frames_in_range": 2813,
+      "voiced_frames_total": 2813,
+      "rpa50_in_range_unshifted": 0.8389619623178102,
+      "rpa25_in_range_unshifted": 0.7212939921791681,
+      "coverage_in_range": 0.9036615712762176,
+      "false_voiced_unvoiced": 0.07501933488012374,
+      "median_abs_cents_when_tracking_in_range": 8.7355220046083
+    },
+    "vocadito_7_clean": {
+      "reference_frames_in_range": 1996,
+      "voiced_frames_total": 1996,
+      "rpa50_in_range_unshifted": 0.9333667334669339,
+      "rpa25_in_range_unshifted": 0.8647294589178357,
+      "coverage_in_range": 0.9754509018036072,
+      "false_voiced_unvoiced": 0.14653902798232696,
+      "median_abs_cents_when_tracking_in_range": 7.614248513309561
+    },
+    "vocadito_7_bleed_10dB": {
+      "reference_frames_in_range": 1996,
+      "voiced_frames_total": 1996,
+      "rpa50_in_range_unshifted": 0.9133266533066132,
+      "rpa25_in_range_unshifted": 0.8481963927855711,
+      "coverage_in_range": 0.9393787575150301,
+      "false_voiced_unvoiced": 0.10456553755522828,
+      "median_abs_cents_when_tracking_in_range": 7.843822106261985
+    },
+    "vocadito_9_clean": {
+      "reference_frames_in_range": 2006,
+      "voiced_frames_total": 2071,
+      "rpa50_in_range_unshifted": 0.8863409770687937,
+      "rpa25_in_range_unshifted": 0.7806580259222333,
+      "coverage_in_range": 0.9626121635094715,
+      "false_voiced_unvoiced": 0.13620569840166782,
+      "median_abs_cents_when_tracking_in_range": 8.814892556356165
+    },
+    "vocadito_9_bleed_10dB": {
+      "reference_frames_in_range": 2006,
+      "voiced_frames_total": 2071,
+      "rpa50_in_range_unshifted": 0.8514456630109671,
+      "rpa25_in_range_unshifted": 0.7268195413758723,
+      "coverage_in_range": 0.9396809571286141,
+      "false_voiced_unvoiced": 0.10701876302988186,
+      "median_abs_cents_when_tracking_in_range": 10.373899093277398
+    },
+    "vocadito_15_clean": {
+      "reference_frames_in_range": 2164,
+      "voiced_frames_total": 2314,
+      "rpa50_in_range_unshifted": 0.9117375231053605,
+      "rpa25_in_range_unshifted": 0.8188539741219963,
+      "coverage_in_range": 0.9861367837338263,
+      "false_voiced_unvoiced": 0.21864406779661016,
+      "median_abs_cents_when_tracking_in_range": 7.515684529808968
+    },
+    "vocadito_15_bleed_10dB": {
+      "reference_frames_in_range": 2164,
+      "voiced_frames_total": 2314,
+      "rpa50_in_range_unshifted": 0.710720887245841,
+      "rpa25_in_range_unshifted": 0.6321626617375231,
+      "coverage_in_range": 0.805452865064695,
+      "false_voiced_unvoiced": 0.10423728813559321,
+      "median_abs_cents_when_tracking_in_range": 8.801431602837098
+    },
+    "vocadito_17_clean": {
+      "reference_frames_in_range": 3198,
+      "voiced_frames_total": 3303,
+      "rpa50_in_range_unshifted": 0.9046278924327705,
+      "rpa25_in_range_unshifted": 0.8208255159474672,
+      "coverage_in_range": 0.965603502188868,
+      "false_voiced_unvoiced": 0.05416116248348745,
+      "median_abs_cents_when_tracking_in_range": 6.63315085841222
+    },
+    "vocadito_17_bleed_10dB": {
+      "reference_frames_in_range": 3198,
+      "voiced_frames_total": 3303,
+      "rpa50_in_range_unshifted": 0.7526579111944965,
+      "rpa25_in_range_unshifted": 0.6816760475297061,
+      "coverage_in_range": 0.8470919324577861,
+      "false_voiced_unvoiced": 0.017173051519154558,
+      "median_abs_cents_when_tracking_in_range": 7.339335191793796
+    },
+    "vocadito_25_clean": {
+      "reference_frames_in_range": 1623,
+      "voiced_frames_total": 1704,
+      "rpa50_in_range_unshifted": 0.9488601355514479,
+      "rpa25_in_range_unshifted": 0.8755391250770179,
+      "coverage_in_range": 0.9882932840418978,
+      "false_voiced_unvoiced": 0.22262773722627738,
+      "median_abs_cents_when_tracking_in_range": 7.083160098241337
+    },
+    "vocadito_25_bleed_10dB": {
+      "reference_frames_in_range": 1623,
+      "voiced_frames_total": 1704,
+      "rpa50_in_range_unshifted": 0.933456561922366,
+      "rpa25_in_range_unshifted": 0.8490449784349969,
+      "coverage_in_range": 0.9661121380160197,
+      "false_voiced_unvoiced": 0.1654501216545012,
+      "median_abs_cents_when_tracking_in_range": 8.143983454464669
+    },
+    "vocadito_37_clean": {
+      "reference_frames_in_range": 5106,
+      "voiced_frames_total": 5106,
+      "rpa50_in_range_unshifted": 0.9853113983548766,
+      "rpa25_in_range_unshifted": 0.9592636114375245,
+      "coverage_in_range": 0.9976498237367802,
+      "false_voiced_unvoiced": 0.29227823867262287,
+      "median_abs_cents_when_tracking_in_range": 3.7766997573582244
+    },
+    "vocadito_37_bleed_10dB": {
+      "reference_frames_in_range": 5106,
+      "voiced_frames_total": 5106,
+      "rpa50_in_range_unshifted": 0.9567175871523698,
+      "rpa25_in_range_unshifted": 0.9146102624363494,
+      "coverage_in_range": 0.9845280062671367,
+      "false_voiced_unvoiced": 0.0631780472239949,
+      "median_abs_cents_when_tracking_in_range": 5.725289641200188
+    },
+    "vocadito_38_clean": {
+      "reference_frames_in_range": 2454,
+      "voiced_frames_total": 2463,
+      "rpa50_in_range_unshifted": 0.9299103504482478,
+      "rpa25_in_range_unshifted": 0.839038304808476,
+      "coverage_in_range": 0.9722901385493072,
+      "false_voiced_unvoiced": 0.4547792541791685,
+      "median_abs_cents_when_tracking_in_range": 8.699672078762077
+    },
+    "vocadito_38_bleed_10dB": {
+      "reference_frames_in_range": 2454,
+      "voiced_frames_total": 2463,
+      "rpa50_in_range_unshifted": 0.8916055419722901,
+      "rpa25_in_range_unshifted": 0.7909535452322738,
+      "coverage_in_range": 0.9233903830480847,
+      "false_voiced_unvoiced": 0.07201028718388341,
+      "median_abs_cents_when_tracking_in_range": 8.806701533080386
+    },
+    "vocadito_39_clean": {
+      "reference_frames_in_range": 3724,
+      "voiced_frames_total": 3951,
+      "rpa50_in_range_unshifted": 0.9709989258861439,
+      "rpa25_in_range_unshifted": 0.8984962406015038,
+      "coverage_in_range": 0.9932867883995704,
+      "false_voiced_unvoiced": 0.4359654943596549,
+      "median_abs_cents_when_tracking_in_range": 6.961639885666827
+    },
+    "vocadito_39_bleed_10dB": {
+      "reference_frames_in_range": 3724,
+      "voiced_frames_total": 3951,
+      "rpa50_in_range_unshifted": 0.9395810955961332,
+      "rpa25_in_range_unshifted": 0.8584854994629431,
+      "coverage_in_range": 0.9583780880773362,
+      "false_voiced_unvoiced": 0.11413404114134042,
+      "median_abs_cents_when_tracking_in_range": 7.153696239670172
+    },
+    "vocadito_40_clean": {
+      "reference_frames_in_range": 2042,
+      "voiced_frames_total": 2042,
+      "rpa50_in_range_unshifted": 0.9382957884427032,
+      "rpa25_in_range_unshifted": 0.8672869735553379,
+      "coverage_in_range": 0.9789422135161606,
+      "false_voiced_unvoiced": 0.25884383088869717,
+      "median_abs_cents_when_tracking_in_range": 6.579424004921169
+    },
+    "vocadito_40_bleed_10dB": {
+      "reference_frames_in_range": 2042,
+      "voiced_frames_total": 2042,
+      "rpa50_in_range_unshifted": 0.9221351616062684,
+      "rpa25_in_range_unshifted": 0.8418217433888345,
+      "coverage_in_range": 0.9676787463271302,
+      "false_voiced_unvoiced": 0.09577221742881795,
+      "median_abs_cents_when_tracking_in_range": 7.033524919216529
+    }
+  }
+}

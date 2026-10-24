@@ -1,0 +1,19 @@
+VST3 process sr=44100 block=1 passed
+VST3 process sr=44100 block=32 passed
+VST3 process sr=44100 block=64 passed
+VST3 process sr=44100 block=127 passed
+VST3 process sr=44100 block=256 passed
+VST3 process sr=44100 block=1024 passed
+VST3 process sr=48000 block=1 passed
+VST3 process sr=48000 block=32 passed
+VST3 process sr=48000 block=64 passed
+VST3 process sr=48000 block=127 passed
+VST3 process sr=48000 block=256 passed
+VST3 process sr=48000 block=1024 passed
+VST3 process sr=96000 block=1 passed
+VST3 process sr=96000 block=32 passed
+VST3 process sr=96000 block=64 passed
+VST3 process sr=96000 block=127 passed
+VST3 process sr=96000 block=256 passed
+VST3 process sr=96000 block=1024 passed
+VST3 discovery, state restore, processing, latency and editor checks passed
