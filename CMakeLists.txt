@@ -36,6 +36,12 @@ if(BUILD_TESTING)
     add_executable(ape_scale_link_tests Tests/ScaleLinkTests.cpp)
     target_link_libraries(ape_scale_link_tests PRIVATE ape_key_dsp)
     add_test(NAME scale-link COMMAND ape_scale_link_tests)
+    if(MSVC)
+        # The tests keep many engines/analysers (80-160 KB each) as locals;
+        # Windows' default 1 MB stack is too small (the plug-ins allocate them on the heap).
+        target_link_options(ape_dsp_tests PRIVATE /STACK:16777216)
+        target_link_options(ape_key_tests PRIVATE /STACK:16777216)
+    endif()
 endif()
 if(APE_BUILD_PLUGIN)
     include(FetchContent)
