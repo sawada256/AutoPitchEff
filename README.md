@@ -1,8 +1,8 @@
 # AutoPitchEff / AutoScaleLink
 
-ライブ歌唱向けの低遅延ピッチ補正 VST3 プラグイン（macOS、Apple Silicon / Intel 両対応）と、曲の調を自動で解析して AutoPitchEff に送る相棒プラグインです。
+ライブ歌唱向けの低遅延ピッチ補正 VST3 プラグイン（macOS の Apple Silicon / Intel と、Windows 10 / 11 の x64 に対応）と、曲の調を自動で解析して AutoPitchEff に送る相棒プラグインです。
 
-*English summary: Low-latency live vocal pitch correction (VST3, macOS universal) with MIDI key/target control, zero-latency formant preservation and chorus tools, plus AutoScaleLink, a companion plug-in that detects the song key and sends it to AutoPitchEff. AGPL-3.0. Documentation is in Japanese.*
+*English summary: Low-latency live vocal pitch correction (VST3, macOS universal and Windows x64) with MIDI key/target control, zero-latency formant preservation and chorus tools, plus AutoScaleLink, a companion plug-in that detects the song key and sends it to AutoPitchEff. AGPL-3.0. Documentation is in Japanese.*
 
 ![AutoPitchEff](docs/images/editor.png)
 
@@ -17,7 +17,16 @@
 
 ## 1. インストール
 
-### 配布 ZIP から（ビルド不要）
+### Windows（インストーラー）
+
+1. [Releases](../../releases) から `AutoPitchEff-<版>-Windows-x64-Setup.exe` をダウンロードして実行します。
+2. 「Windows によって PC が保護されました」と表示された場合は、**詳細情報 → 実行** を押します（このインストーラーには有料のコード署名がないため表示されます。信頼できる入手元のファイルにだけ実行してください）。
+3. 管理者の確認に「はい」で答え、画面の指示に従います。プラグインは `C:\Program Files\Common Files\VST3` に入ります。AutoScaleLink は省略することもできます。
+4. DAW でプラグインを再スキャンします。
+
+アンインストールは「設定 → アプリ → インストールされているアプリ」の **AutoPitchEff / AutoScaleLink** から行えます。インストーラーを使わない場合は、`AutoPitchEff-<版>-Windows-x64.zip` の中の `.vst3` フォルダーを `C:\Program Files\Common Files\VST3` へコピーしても使えます。Visual C++ ランタイムの別途インストールは不要です。
+
+### macOS（配布 ZIP から、ビルド不要）
 
 1. [Releases](../../releases) から `AutoPitchEff-<版>-macOS-universal.zip` をダウンロードして展開します。
 2. `AutoPitchEff.vst3` と `AutoScaleLink.vst3` を `~/Library/Audio/Plug-Ins/VST3/` へコピーします（Finder で `Cmd + Shift + G` → このパスを入力）。
@@ -31,7 +40,7 @@
 
 > **なぜ 3. が必要？** このプラグインは Apple の有料開発者署名・公証（notarization）を受けていません（ビルド時に「アドホック署名」だけを付けています）。インターネットからダウンロードしたファイルには macOS が「隔離（quarantine）」の印を付け、公証のないプラグインは DAW での読み込みを拒否されます。上のコマンドは、その印だけを外します。プラグインの中身は変更しません。信頼できる入手元のファイルにだけ実行してください。
 
-### ソースからビルド
+### ソースからビルド（macOS）
 
 Xcode Command Line Tools、CMake 3.22 以上、Ninja が必要です（例: `brew install cmake ninja`）。JUCE 8.0.12 はビルド時に自動でダウンロードされ、ハッシュで検証されます。
 
@@ -41,6 +50,14 @@ Xcode Command Line Tools、CMake 3.22 以上、Ninja が必要です（例: `bre
 ```
 
 自分でビルドしたものは隔離の印が付かないため、上記の `xattr` は不要です。
+
+### ソースからビルド（Windows）
+
+Visual Studio 2022（C++ によるデスクトップ開発）、CMake、[Inno Setup 6](https://jrsoftware.org/isinfo.php) を入れ、PowerShell で次を実行します。`dist\` に ZIP とインストーラーができます。
+
+```powershell
+./scripts/package-windows.ps1
+```
 
 ## 2. まず使ってみる（Cubase の例）
 
