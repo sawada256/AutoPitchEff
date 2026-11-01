@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.22)
 project(AutoPitchEff VERSION 0.7.1 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# Windows: link the C++ runtime statically so the plug-ins load without the
+# Visual C++ Redistributable being installed.
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 option(APE_BUILD_PLUGIN "Build VST3 and audio tools (downloads JUCE)" ON)
 option(APE_SANITIZE "Enable address and undefined behaviour sanitizers" OFF)
 if(APE_SANITIZE)

@@ -10,6 +10,17 @@ if ($LASTEXITCODE) { exit $LASTEXITCODE }
 ctest --test-dir build-windows -C Release --output-on-failure
 if ($LASTEXITCODE) { exit $LASTEXITCODE }
 
+# Load both plug-ins in a real host (pluginval) when requested (CI).
+if ($env:APE_PLUGINVAL) {
+  $pv = Join-Path $env:RUNNER_TEMP "pluginval"
+  Invoke-WebRequest "https://github.com/Tracktion/pluginval/releases/download/v1.0.4/pluginval_Windows.zip" -OutFile "$pv.zip"
+  Expand-Archive "$pv.zip" -DestinationPath $pv -Force
+  foreach ($name in "AutoPitchEff", "AutoScaleLink") {
+    & "$pv\pluginval.exe" --strictness-level 5 --validate-in-process --validate "build-windows/${name}_artefacts/Release/VST3/$name.vst3"
+    if ($LASTEXITCODE) { Write-Error "pluginval failed for $name"; exit $LASTEXITCODE }
+  }
+}
+
 New-Item -ItemType Directory -Force dist | Out-Null
 $stage = Join-Path "dist" "AutoPitchEff-$version-Windows-x64"
 if (Test-Path $stage) { Remove-Item -Recurse -Force $stage }

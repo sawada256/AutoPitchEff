@@ -1,5 +1,11 @@
 # Changes
 
+## 0.7.1
+
+- Windows 10/11 x64 support: VST3 plug-ins, an installer (Inno Setup) and a ZIP. The C++ runtime is linked statically.
+- AutoScaleLink ↔ AutoPitchEff linking works on Windows (shared memory in the user's session).
+- CI builds and tests macOS and Windows, validates the Windows plug-ins with pluginval, and publishes both on tags.
+
 ## 0.7.0 — first public release
 
 AutoPitchEff
