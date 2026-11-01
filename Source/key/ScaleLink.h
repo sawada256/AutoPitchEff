@@ -20,6 +20,7 @@ private:
     };
     struct Shared { uint64_t magic = 0; Slot slots[8]; };
     Shared* shared = nullptr;
+    void* mappingHandle = nullptr; // Windows file-mapping handle
     uint64_t token = 0;
     int ownedGroup = -1;
 };
